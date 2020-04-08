@@ -4,7 +4,9 @@ const rp = require('request-promise')
 
 const URL = 'http://musicapi.xiecheng.live/personalized'
 
-cloud.init()
+cloud.init({
+    env: cloud.DYNAMIC_CURRENT_ENV
+})
 
 const db = cloud.database()
 const playlistCollection = db.collection('playlist')
