@@ -30,7 +30,7 @@
   | /delete | post | 删除轮播图记录 |
   | /upload | post | 上传轮播图     |
   
-+ microblog 路由
++ /microblog 路由
   | 子路由  | 方法 | 说明             |
   | ------- | ---- | ---------------- |
   | /count  | get  | 获取微博记录总数 |
