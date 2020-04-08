@@ -5,7 +5,9 @@ const rp = require('request-promise')
 
 const baseUrl = 'http://musicapi.xiecheng.live'
 
-cloud.init()
+cloud.init({
+    env: cloud.DYNAMIC_CURRENT_ENV
+})
 
 // 云函数入口函数
 exports.main = async(event, context) => {
