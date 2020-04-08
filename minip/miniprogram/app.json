@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/music/music",
+        "pages/musiclist/musiclist",
+        "pages/player/player",
+        "pages/microblog/microblog",
+        "pages/edit-microblog/edit-microblog",
+        "pages/microblog-detail/microblog-detail",
+        "pages/profile/profile",
+        "pages/profile-music/profile-music",
+        "pages/profile-myblog/profile-myblog"
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F00",
+        "navigationBarTitleText": "Music bar",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#d81e06",
+        "list": [
+            {
+                "pagePath": "pages/music/music",
+                "text": "music",
+                "iconPath": "images/music.png",
+                "selectedIconPath": "images/music-actived.png"
+            },
+            {
+                "pagePath": "pages/microblog/microblog",
+                "text": "microblog",
+                "iconPath": "images/blog.png",
+                "selectedIconPath": "images/blog-actived.png"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "profile",
+                "iconPath": "images/user.png",
+                "selectedIconPath": "images/user-actived.png"
+            }
+        ]
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "sitemapLocation": "sitemap.json"
+}

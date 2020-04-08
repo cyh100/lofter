@@ -1,0 +1,21 @@
+<view class="wrapper">
+    <image class="coverbg" src="{{listInfo.coverImgUrl}}"></image>
+
+    <view class="listInfo-detail">
+        <image class="cover-img" src="{{listInfo.coverImgUrl}}"></image>
+        <view class="listInfo-desc">
+            <view class="playlist-name">{{listInfo.name}}</view>
+            <view class="playlist-creator">
+                <image class="avatar-img" src="{{listInfo.avatarUrl}}"></image>
+                <view class="playlist-creator-name">{{listInfo.creator}}</view>
+            </view>
+            <view class="playlist-desc">
+                <text>{{listInfo.description}}</text>
+            </view>
+        </view>
+        <view class="listInfo-count">
+            <text class="count" wx:if="{{listInfo.commentCount}}">{{listInfo.commentCount}}条评论</text>
+            <text class="count" wx:if="{{listInfo.shareCount}}">{{listInfo.shareCount}}次分享</text>
+        </view>
+    </view>
+</view>

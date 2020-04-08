@@ -1,0 +1,5 @@
+<view class="search-inner-container">
+	<input class="input" type="text" placeholder="请输入要搜索的内容..." value="{{value}}" bindinput="onInput" confirm-type="search" bindconfirm="onSearch"></input>
+	<i hidden="{{value.length}}" class="iconfont icon-delete" catchtap="onCancel"></i>
+	<i class="iconfont icon--search" bindtap="onSearch"></i>
+</view>

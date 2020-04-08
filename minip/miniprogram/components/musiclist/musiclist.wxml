@@ -1,0 +1,18 @@
+<!--components/musiclist/musiclist.wxml-->
+<view class="musiclist-wrapper">
+    <view class="title" wx:if="{{musiclist.length}}">
+        歌曲列表 ({{musiclist.length}}首)
+    </view>
+    <view wx:for="{{musiclist}}" wx:key="id">
+        <view bindtap="onSelected" data-id="{{item.id}}" data-index="{{index}}" class="music-item-wrapper">
+            <view class="index">
+                <text wx:if="{{item.id != playingId}}">{{index + 1}}</text>
+                <image wx:else src="../../images/playing.png"></image>
+            </view>
+            <view class="music">
+                <view class="music-name">{{item.name}}</view>
+                <view class="music-singer">{{item.ar[0].name}}-{{item.al.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

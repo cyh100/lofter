@@ -1,0 +1,31 @@
+<view class="microblog-container">
+	<view class="header">
+		<view class="edit-container" bindtap="_showModal">
+			<i class="iconfont icon-blog"></i>
+			<text class="edit-text">写动态</text>
+		</view>
+		<view class="search-container">
+			<jacky-search bind:search="onSearch" bind:cancelsearch="oncancelSearch"></jacky-search>
+		</view>
+	</view>
+
+
+	<view class="content">
+		<block wx:if="{{searchArr.length}}">
+			<view wx:for="{{searchArr}}" wx:key="_id" data-microblogId="{{item._id}}">
+				<jacky-microblog-card microblog="{{item}}"></jacky-microblog-card>
+			</view>
+		</block>
+
+		<block wx:else>
+			<view wx:for="{{microblogArr}}" wx:key="_id" bindtap="goToDetail" data-microblogId="{{item._id}}">
+				<jacky-microblog-card microblog="{{item}}"></jacky-microblog-card>
+			</view>
+		</block>
+	</view>
+
+
+	<jacky-auth-modal showAuthModal="{{ !isAuthorized }}" bindgetUserInfoSucc="getUserInfoSucc" bindgetUserInfoFail="getUserInfoFail">
+	</jacky-auth-modal>
+
+</view>

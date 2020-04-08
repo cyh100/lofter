@@ -1,0 +1,33 @@
+@import '/style/iconfont.wxss';
+
+.search-inner-container {
+    display: flex;
+    position: relative;
+    height: 50rpx;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    border: 2rpx solid rgba(255, 0, 0, 0.7);
+    align-items: center;
+}
+
+.input {
+    flex: 1;
+    height: 50rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    font-size: 28rpx;
+}
+
+.icon--search {
+    width: 80rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.icon-delete {
+    padding: 10rpx;
+}

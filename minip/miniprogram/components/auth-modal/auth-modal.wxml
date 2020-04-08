@@ -1,0 +1,5 @@
+<jacky-bottom-modal showBottomModal="{{ showAuthModal }}">
+    <view slot="modal-content" class="modal-content">
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler" class="login-button">授权用户信息</button>
+    </view>
+</jacky-bottom-modal>

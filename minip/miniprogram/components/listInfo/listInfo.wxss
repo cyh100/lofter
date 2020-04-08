@@ -1,0 +1,85 @@
+.wrapper {
+    height: 360rpx;
+    position: relative;
+}
+
+.coverbg {
+    width: 100%;
+    height: 360rpx;
+    filter: blur(10rpx);
+    opacity: 0.6;
+}
+
+.listInfo-detail {
+    position: absolute;
+    width: 100%;
+    height: 340rpx;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.listInfo-detail .cover-img {
+    float: left;
+    width: 220rpx;
+    height: 220rpx;
+    margin-top: 50rpx;
+    margin-left:  30rpx;
+    border-radius: 10rpx;
+}
+
+.listInfo-detail .listInfo-desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    padding-left: 30rpx;
+    letter-spacing: 0.08rem;
+}
+.listInfo-detail .listInfo-desc .playlist-name {
+    font-weight: 520;
+    font-size: 26rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    word-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+.listInfo-detail .listInfo-desc .playlist-creator {
+    margin: 20rpx 0 30rpx;
+    height: 50rpx;
+}
+.listInfo-detail .listInfo-desc .playlist-creator .avatar-img {
+    float: left;
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.listInfo-detail .listInfo-desc .playlist-creator .playlist-creator-name {
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 24rpx;
+}
+.listInfo-detail .listInfo-desc .playlist-desc {
+    font-size: 22rpx;
+    line-height: 1.2;
+    vertical-align: middle;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.listInfo-detail .listInfo-count {
+    position: absolute;
+    width: 100%;
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 24rpx;
+    bottom: 10rpx;
+    left: 0;
+}
+.listInfo-detail .listInfo-count .count{
+    margin-left: 60rpx;
+}

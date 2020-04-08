@@ -1,0 +1,5 @@
+<!--pages/musiclist/musiclist.wxml-->
+<view class="musiclist-container">
+    <jacky-list-info listInfo="{{listInfo}}"></jacky-list-info>
+    <jacky-musiclist musiclist="{{musiclist}}"></jacky-musiclist>
+</view>

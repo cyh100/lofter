@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+      "jacky-microblog-card": "/components/microblog-card/microblog-card"
+  }
+}

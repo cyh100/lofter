@@ -1,0 +1,46 @@
+.title {
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    padding-left: 60rpx;
+    border-radius: 40rpx 40rpx 0 0/40rpx 40rpx 0 0;
+    background-color: #fff;
+}
+
+.music-item-wrapper {
+    display: flex;
+    align-items: center;
+    height: 90rpx;
+    padding: 5rpx 20rpx 5rpx 0;
+    background-color: #fff;
+    color: #222;
+}
+
+.music-item-wrapper .index {
+    width: 70rpx;
+    padding-left: 20rpx;
+    color: #999;
+    text-align: center;
+}
+.music-item-wrapper .index image {
+    width: 32rpx;
+    height: 32rpx;
+}
+.music-item-wrapper .music {
+    width: 0;
+    flex-grow: 1;
+    padding-left: 30rpx;
+}
+.music-item-wrapper .music .music-name {
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 28rpx;
+    overflow: hidden;
+}
+.music-item-wrapper .music .music-singer {
+    color :#999;
+    font-size: 22rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+}

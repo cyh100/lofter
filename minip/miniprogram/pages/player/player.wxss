@@ -1,0 +1,102 @@
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(20rpx);
+    opacity: 0.4;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-color: #222;
+}
+
+.player {
+    position: absolute;
+    width: 592rpx;
+    height: 592rpx;
+    left: 50%;
+    transform: translate(-50%, 140rpx);
+    background: url('https://s3.music.126.net/mobile-new/img/disc.png?d3bdd1080a72129346aa0b4b4964b75f=') center/contain no-repeat;
+}
+
+.player::after {
+    content: '';
+    width: 192rpx;
+    height: 274rpx;
+    position: absolute;
+    top: -150rpx;
+    left: 266rpx;
+    background: url('https://s3.music.126.net/m/s/img/needle.png?702cf6d95f29e2e594f53a3caab50e12') center/contain no-repeat;
+    transform: rotate(-15deg);
+    transform-origin: 24rpx 10rpx;
+    transition: transform ease 0.5s;
+}
+
+.playing.player::after {
+    transform: rotate(0deg);
+}
+
+.player image {
+    width: 368rpx;
+    height: 368rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 112rpx;
+    left: 112rpx;
+}
+
+.rotation {
+    animation: rotation 12s linear infinite;
+    -webkit-animation: rotation 12s linear infinite; 
+    -moz-animation: rotation 12s linear infinite;
+    -o-animation: rotation 12s linear infinite;
+}
+
+.rotation-paused {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.controller {
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+    width: 70%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-icon-test1, .icon-icon-test {
+    font-size: 80rpx;
+}
+
+.icon-playing, .icon-pause1 {
+    font-size: 100rpx;
+}
+
+.bar-container {
+    position: absolute;
+    bottom: 22%;
+    left: 0;
+    right: 0;
+}

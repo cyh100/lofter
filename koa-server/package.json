@@ -1,0 +1,23 @@
+{
+  "name": "koa-server",
+  "version": "1.0.0",
+  "description": "利用Koa2实现一个简易后台管理系统的后端部分",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "alohacyh@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "koa": "^2.10.0",
+    "koa-body": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

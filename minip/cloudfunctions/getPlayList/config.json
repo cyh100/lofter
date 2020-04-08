@@ -1,0 +1,9 @@
+{
+    "triggers": [
+        {
+            "name": "getPlayList",
+            "type": "timer",
+            "config": "0 0 0,6,12,18 * * * *"
+        }
+    ]
+}

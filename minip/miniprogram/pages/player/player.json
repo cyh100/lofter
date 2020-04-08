@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "",
+    "usingComponents": {
+        "jacky-progress-bar": "/components/progress-bar/progress-bar"
+    }
+}

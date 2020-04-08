@@ -1,0 +1,40 @@
+<view class="userInfo-container">
+	<view class="avatar-container">
+		<open-data type="userAvatarUrl" class="avatar"></open-data>
+	</view>
+	<view class="userInfo">
+		<view>
+			<open-data type="userNickName"></open-data>
+		</view>
+        <view class="sub-text">
+			<open-data type="userCity" lang="zh_CN" default-text="南京"></open-data>
+            <text> / </text>
+			<open-data type="userProvince" lang="zh_CN" default-text="江苏"></open-data>
+            <text> / </text>
+			<open-data type="userGender" lang="zh_CN"></open-data>
+		</view>
+        <view class="sub-text">
+			<view>生活不止眼前的苟且,</view>
+            <view>还有诗和远方。</view>
+		</view>
+	</view>
+</view>
+
+
+<view class="card-container">
+	<navigator url="/pages/profile-music/profile-music" class="list">
+		<i class="iconfont icon-music icon-1"></i>
+		<text>最近播放</text>
+		<i class="iconfont icon-arrowdropdown icon-2"></i>
+	</navigator>
+    <navigator url="/pages/profile-myblog/profile-myblog" class="list">
+		<i class="iconfont icon-blog icon-1"></i>
+		<text>已发微博</text>
+		<i class="iconfont icon-arrowdropdown icon-2"></i>
+	</navigator>
+    <view class="list" bindtap="getCode">
+		<i class="iconfont icon-code icon-1"></i>
+		<text>小程序二维码</text>
+		<i class="iconfont icon-arrowdropdown icon-2"></i>
+	</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+      "jacky-search": "/components/search/search",
+      "jacky-auth-modal": "/components/auth-modal/auth-modal",
+      "jacky-microblog-card": "/components/microblog-card/microblog-card"
+  },
+  "navigationBarTitleText": "Microblog",
+  "enablePullDownRefresh": true
+}

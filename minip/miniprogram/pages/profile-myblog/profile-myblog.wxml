@@ -1,0 +1,6 @@
+<view>
+	<view wx:for="{{blogList}}" wx:key="_id" class="card-container">
+		<i class="iconfont icon-delete2" bindtap="deleteBlog" data-index="{{index}}"></i>
+		<jacky-microblog-card microblog="{{item}}"></jacky-microblog-card>
+	</view>
+</view>

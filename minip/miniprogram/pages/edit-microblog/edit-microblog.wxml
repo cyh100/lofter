@@ -1,0 +1,59 @@
+<view class="container">
+    <view class="microblog-container">
+
+        <textarea bindinput="inputHandler" class="textarea-content" maxlength="300" placeholder="此刻想法..."></textarea>
+
+        <view class="value-length">
+            <text>{{content.length}}/300</text>
+        </view>
+
+        <view class="img-container">
+            <!-- 循环展示已选择的图片内容 -->
+            <view class="img-select-container" wx:for="{{imgsUrl}}" wx:key="*this">
+                <image src="{{item}}" mode="aspectFill" bindtap="previewImgs" data-imgsrc="{{item}}"></image>
+                <i class="iconfont icon-delete1" bindtap="imgDelete" data-index="{{index}}"></i>
+            </view>
+            
+
+            <!-- 图片选择 -->
+            <view class="img-select-container select" bindtap="imgSelect" hidden="{{imgsUrl.length >= 9}}">
+                <view class="icon-border">
+                    <i class="iconfont icon-62tianjia"></i>
+                </view>
+            </view>
+        </view>
+
+        <view class="send-container">
+            <button class="send-btn" bindtap="send" disabled="{{!(content.length||imgsUrl.length)}}">发表</button>
+        </view>
+
+    </view>
+
+    <view class="send-options-container">
+        <view class="send-options-items">
+            <view>
+                <i class="iconfont icon-location"></i>所在位置
+            </view>
+            <view>
+                <i class="iconfont icon-arrowdropdown"></i>
+            </view>
+        </view>
+        <view class="send-options-items">
+            <view>
+                <i class="iconfont icon-lock"></i>谁能看见
+            </view>
+            <view>
+                <i class="iconfont icon-arrowdropdown"></i>
+            </view>
+        </view>
+        <view class="send-options-items">
+            <view>
+                <i class="iconfont icon-Commentquantity"></i>谁能评论
+            </view>
+            <view>
+                <i class="iconfont icon-arrowdropdown"></i>
+            </view>
+        </view>
+    </view>
+
+</view>

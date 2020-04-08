@@ -1,0 +1,120 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
+	},
+	"appid": "wx6afe55ea2be46b6c",
+	"projectname": "lofter",
+	"libVersion": "2.10.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/demo/demo",
+					"pathName": "pages/demo/demo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/musiclist/musiclist",
+					"pathName": "pages/musiclist/musiclist",
+					"query": "playlistId= 2720520270",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/microblog/microblog",
+					"pathName": "pages/microblog/microblog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/edit-microblog/edit-microblog",
+					"pathName": "pages/edit-microblog/edit-microblog",
+					"query": "nickName=\"jacky\"&avatarUrl= \"https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTJtZKicrNcVeq8yriatAh8fESb5FK5WWxhDEmTNctF2MFLIA7NyNTg7kKOCnvXicictfaF4BXqjcEwFIA/132\"",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "player",
+					"pathName": "pages/player/player",
+					"query": "index= 6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile-myblog",
+					"pathName": "pages/profile-myblog/profile-myblog",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile-music",
+					"pathName": "pages/profile-music/profile-music",
+					"query": "playlistId= 2720520270",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,6 @@
+<view class="modal" wx:if="{{ showBottomModal }}">
+    <view class="panel">
+        <i class="iconfont icon-delete" bindtap="closeModal"></i>
+        <slot name="modal-content"></slot>
+    </view>
+</view>

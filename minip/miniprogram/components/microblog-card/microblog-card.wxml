@@ -1,0 +1,21 @@
+<view class="microblog-card-container">
+    <view class="header">
+        <image class="avatar" src="{{microblog.avatarUrl}}"></image>
+        <view class="info">
+            <view class="nickName">{{microblog.nickName}}</view>
+            <view class="date">{{microblog.createTime}}</view>
+        </view>
+    </view>
+
+    <view class="content">
+        <view class="text-container">
+            <text class="text-content">{{microblog.content}}</text>
+        </view>
+        <view class="image-container">
+            <block wx:for="{{microblog.fileIdsUrl}}" wx:key="*this">
+                <image class="item-img" src="{{item}}" catchtap="previewImg" data-imgsrc="{{item}}" data-fileIdsUrl="{{microblog.fileIdsUrl}}" mode="aspectFill"></image>
+            </block>            
+        </view>
+    </view>
+
+</view>

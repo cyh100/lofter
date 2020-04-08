@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "",
+    "usingComponents": {
+        "jacky-list-info": "../../components/listInfo/listInfo",
+        "jacky-musiclist": "../../components/musiclist/musiclist"
+    }
+}

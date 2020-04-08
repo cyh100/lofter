@@ -1,0 +1,17 @@
+page {
+    background-color: #eee;
+    padding: 20rpx 0;
+}
+
+.card-container {
+    position: relative;
+    margin-bottom: 20rpx;
+}
+
+.icon-delete2 {
+    position: absolute;
+    top: 20rpx;
+    right: 20rpx;
+    padding: 10rpx;
+    font-size: 50rpx;
+}

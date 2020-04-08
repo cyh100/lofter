@@ -1,0 +1,22 @@
+<!--pages/player/player.wxml-->
+<view>
+    <view style="background: url({{picUrl}}) center/cover no-repeat" class="bg"></view>
+    <view class="mask"></view>
+
+
+    <view class="player {{isPlaying ? 'playing' : ''}}">
+        <image class="rotation {{isPlaying ? '' : 'rotation-paused'}}" src="{{picUrl}}"></image>
+    </view>
+
+
+    <view class="bar-container">
+        <jacky-progress-bar></jacky-progress-bar>
+    </view>
+    
+
+    <view class="controller">
+        <text bindtap="playBefore" class="iconfont icon-icon-test1"></text>
+        <text bindtap="playToggle" class="iconfont {{isPlaying?'icon-pause1':'icon-playing'}}"></text>
+        <text bindtap="playNext" class="iconfont icon-icon-test"></text>
+    </view>
+</view>

@@ -1,0 +1,58 @@
+
+.microblog-card-container {
+    margin-bottom: 30rpx;
+    padding: 20rpx 0;
+    border-radius: 20rpx;
+    background-color: #fff;
+}
+
+
+.microblog-card-container .header {
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+}
+.microblog-card-container .header .avatar {
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 30rpx 0 20rpx;
+    border-radius: 50%;
+}
+.microblog-card-container .header .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.microblog-card-container .header .info .nickName {
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: rgba(255, 0, 0, 0.7);
+}
+.microblog-card-container .header .info .date {
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 20rpx;
+    color: #666;
+}
+
+
+.microblog-card-container .content {
+    padding-left: 15rpx;
+}
+
+.microblog-card-container .content .text-container .text-content {
+    line-height: 50rpx;
+    font-size: 28rpx;
+    letter-spacing: 0.02rem;
+    padding-right: 8rpx;
+}
+.microblog-card-container .content .image-container {
+    margin-bottom: 0;
+}
+.microblog-card-container .content .image-container .item-img {
+    width: 31.3%;
+    height: 220rpx;
+    margin: 5rpx 2% 0 0;
+    border-radius: 6rpx;
+}

@@ -1,0 +1,36 @@
+/* pages/music/music.wxss */
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    height: 80rpx;
+    line-height: 80rpx;
+}
+
+.heading .title {
+    height: 58rpx;
+    line-height: 58rpx;
+    margin-left: 20rpx;
+    font-size: 32rpx;
+}
+
+.heading .button {
+    color: #666;
+    float: right;
+    margin-right: 20rpx;
+    font-size: 24rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    margin-top: 20rpx;
+    padding: 2rpx 4rpx;
+    border: 1px solid #ccc;
+    border-radius: 20rpx;
+}
+.playlist-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

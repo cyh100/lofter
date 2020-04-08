@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "jacky-bottom-modal": "/components/bottom-modal/bottom-modal"
+    }
+}

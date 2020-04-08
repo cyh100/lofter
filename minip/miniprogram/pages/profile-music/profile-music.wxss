@@ -1,0 +1,18 @@
+.playlist-container {
+    height: 420rpx;
+    background-color: bisque;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.title {
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 10rpx;
+    font-size: 36rpx;
+}
+
+.playlist {
+    display: inline-block;
+    margin:  10rpx 20rpx;
+}

@@ -1,0 +1,11 @@
+<view class="playlist-container">
+    <view class="title">最近播放歌单</view>
+    <view wx:for="{{playlist}}" wx:key="id" class="playlist">
+        <jacky-playlist playlist="{{item}}" />
+    </view>
+</view>
+
+
+<view>
+    <jacky-musiclist musiclist="{{musiclist}}" />
+</view>
